@@ -50,6 +50,8 @@ public class UserMainFragment extends BaseFragment {
     public void onLoginSuccess(LoginStateEvent event) {
         if (event.isSuccess) {
             tv_login_state.setText("已登录");
+        }else{
+            tv_login_state.setText("未登录");
         }
     }
 

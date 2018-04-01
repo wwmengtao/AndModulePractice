@@ -57,6 +57,8 @@ public class ShoppingCartMainFragment extends BaseFragment {
     public void onLoginSuccess(LoginStateEvent event) {
         if (event.isSuccess) {
             tv_loginstate.setText("已登录");
+        }else{
+            tv_loginstate.setText("未登录");
         }
     }
 }
